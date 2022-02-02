@@ -8,6 +8,9 @@ body {
   margin: 0;
   padding: 0;
   width: 100%; }
+  @media screen and (min-width: 768px) {
+    body {
+      background: #f9f9f9; } }
 
 ul {
   list-style: none;
@@ -23,7 +26,7 @@ ul {
   #mobile-nav {
     display: none; } }
 #mobile-nav i {
-  margin: 10px; }
+  margin: 0.6rem 2.5rem; }
 
 #desktop-nav {
   display: none; }
@@ -53,7 +56,7 @@ ul {
     text-decoration: none;
     color: gray; }
   #sections-pages-links img {
-    width: 8vw; }
+    width: 12vw; }
   #sections-pages-links li {
     padding: 0 2.5rem;
     font-weight: bold; }
@@ -71,9 +74,15 @@ ul {
 
 #headline {
   margin-block-start: 5rem;
-  padding: 0 10px;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    #headline {
+      margin-block-start: 0;
+      margin-block-start: 0;
+      background: #f9f9f9;
+      padding: 4rem 9rem; } }
   #headline p {
     margin-block: 0; }
   #headline #welcome-sentence {
@@ -85,7 +94,13 @@ ul {
     font-family: 'COCOGOOSE', sans-serif;
     color: #ec5242;
     font-size: 1.8rem;
-    font-weight: 600; }
+    font-weight: 600;
+    background-clip: text;
+    -webkit-background-clip: text; }
+    @media screen and (min-width: 768px) {
+      #headline h1 {
+        font-size: 2.8rem;
+        width: 46%; } }
   #headline #introduction {
     font-family: 'Lato', sans-serif;
     border: 3px solid white;
@@ -94,12 +109,19 @@ ul {
     padding: 20px 14px;
     text-align: start;
     margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      #headline #introduction {
+        border-width: thick;
+        width: 57%; } }
   #headline #date {
     font-family: 'COCOGOOSE', sans-serif;
     line-height: 50px;
     font-size: 1.8rem;
     font-weight: 600;
     color: #504f4f; }
+    @media screen and (min-width: 768px) {
+      #headline #date {
+        margin-block-start: 2rem; } }
     #headline #date span {
       font-family: 'Lato', sans-serif;
       line-height: 1.2;
@@ -125,20 +147,36 @@ ul {
     border: none; }
   #the-program ul {
     align-self: flex-start;
+    display: flex;
+    flex-direction: column;
     margin-block-end: 0; }
+    @media screen and (min-width: 768px) {
+      #the-program ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; } }
     #the-program ul li {
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-around;
-      width: 90vw;
       background: url(../images/Home-page/Mobile-version/program-item-bg.jpg);
       padding: 20px 10px;
       margin: 15px 2vw; }
+      @media screen and (min-width: 768px) {
+        #the-program ul li {
+          display: flex;
+          width: 25vw;
+          flex-direction: column;
+          padding: 20px 20px;
+          margin: 15px 0.2rem; } }
       #the-program ul li p {
         color: #ec5242;
         font-size: 25px;
         font-weight: bold;
-        word-wrap: break-word; }
+        word-wrap: break-word;
+        text-align: center; }
       #the-program ul li i {
         color: white; }
       #the-program ul li span {
@@ -146,14 +184,36 @@ ul {
         width: 50vw;
         font-size: 20px;
         text-align: center; }
+        @media screen and (min-width: 768px) {
+          #the-program ul li span {
+            width: auto;
+            min-height: 200px; } }
   #the-program button {
+    display: block;
     font-size: 24px;
     padding: 30px 60px;
     margin-block: 1.5rem;
     background: #ec5242;
     color: white;
     border: none;
-    border-radius: 2px; }
+    border-radius: 2px;
+    cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      #the-program button {
+        display: none; } }
+  #the-program #replace-btn {
+    display: none;
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+    margin-block: 1.5rem;
+    color: white;
+    border: none;
+    cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      #the-program #replace-btn {
+        display: block; } }
 
 #speakers {
   display: flex;
@@ -166,15 +226,31 @@ ul {
     border: none; }
   #speakers ul {
     align-self: flex-start;
+    display: flex;
+    flex-direction: column;
     width: 100%; }
+    @media screen and (min-width: 768px) {
+      #speakers ul {
+        flex-flow: row wrap;
+        justify-content: center; } }
     #speakers ul li {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 20px 0px; }
+      @media screen and (min-width: 768px) {
+        #speakers ul li {
+          justify-content: center;
+          width: 48vw; } }
+      @media screen and (min-width: 768px) {
+        #speakers ul li img {
+          margin-right: 1rem; } }
       #speakers ul li div {
         margin-block-start: 0;
         width: 48vw; }
+        @media screen and (min-width: 768px) {
+          #speakers ul li div {
+            width: 25vw; } }
         #speakers ul li div p {
           margin-block-start: 0; }
         #speakers ul li div hr {
@@ -202,10 +278,73 @@ ul {
     background: white;
     border: 1px solid #8080808c;
     padding: 15px 0; }
+    @media screen and (min-width: 768px) {
+      #speakers button {
+        display: none; } }
     #speakers button i {
       margin-left: 5px;
       color: white;
       background: orange;
       border-radius: 1000%; }
+
+footer {
+  display: none;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    footer {
+      display: flex; } }
+
+#partners {
+  background: #414246;
+  width: 100%; }
+  #partners h2 {
+    text-align: center;
+    color: #787878;
+    margin-block-start: 1rem; }
+  #partners hr {
+    width: 7vw;
+    height: 1px;
+    background: #ec5242;
+    border: none; }
+  #partners ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0; }
+    #partners ul li img {
+      width: 15vw; }
+  #partners a {
+    display: none;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+    margin-block: 1.5rem;
+    color: white;
+    border: none;
+    cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      #partners a {
+        display: block; } }
+
+#copyright {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2.5rem 0; }
+  #copyright img {
+    margin-left: 2.5rem; }
+  #copyright p {
+    margin-left: auto;
+    padding: 0 2.5rem;
+    color: grey;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px; }
+    #copyright p a {
+      text-decoration: none;
+      color: green; }
 
 /*# sourceMappingURL=index.css.map */
