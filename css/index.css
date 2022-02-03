@@ -242,9 +242,12 @@ ul {
         #speakers ul li {
           justify-content: center;
           width: 48vw; } }
-      @media screen and (min-width: 768px) {
-        #speakers ul li img {
-          margin-right: 1rem; } }
+      #speakers ul li img {
+        width: 25vw; }
+        @media screen and (min-width: 768px) {
+          #speakers ul li img {
+            margin-right: 1rem;
+            width: 12vw; } }
       #speakers ul li div {
         margin-block-start: 0;
         width: 48vw; }

@@ -1,34 +1,34 @@
 const getSpeakersInfo= () => {
 	return {
 		speaker1: {
-			name: " Mark Zuckerberg",
-			postion: "Co-founder and CEO - Facebook",
-			description: "Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist and Facebook, Inc co-founder."
+			name: "Jensen Huang",
+			postion: "Founder and CEO, NVIDIA",
+			description: "GTC 2022 Keynote"
 		},
 		speaker2: {
-			name: " Mark Zuckerberg",
-			postion: "Co-founder and CEO - Facebook",
-			description: "Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist and Facebook, Inc co-founder."
+			name: "Chelsea Finn",
+			postion: "Assistant Professor, Stanford University",
+			description: "Scaling Data-Driven Robot Learning"
 		},
 		speaker3: {
-			name: " Mark Zuckerberg",
-			postion: "Co-founder and CEO - Facebook",
-			description: "Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist and Facebook, Inc co-founder."
+			name: "Serdar Kadioglu",
+			postion: "Vice President AI, Fidelity Investments | Brown University",
+			description: "Multi-Objective Optimization to Boost Exploration in Recommender Systems"
 		},
 		speaker4: {
-			name: " Mark Zuckerberg",
-			postion: "Co-founder and CEO - Facebook",
-			description: "Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist and Facebook, Inc co-founder."
+			name: "Khalifeh AlJadda",
+			postion: "Sr. Director of Data Science, The Home Depot",
+			description: "Building AI-based Recommender System Leveraging the Power of Deep Learning and GPU"
 		},
 		speaker5: {
-			name: " Mark Zuckerberg",
-			postion: "Co-founder and CEO - Facebook",
-			description: "Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist and Facebook, Inc co-founder."
+			name: "Xiaodi Hou",
+			postion: "Co-Founder and CTO, TuSimple",
+			description: "Achieving Level 4 Autonomy at Scale: How TuSimple is Building on NVIDIA DRIVE Orin to Deploy"
 		},
 		speaker6: {
-			name: " Mark Zuckerberg",
-			postion: "Co-founder and CEO - Facebook",
-			description: "Mark Elliot Zuckerberg is an American media magnate, internet entrepreneur, and philanthropist and Facebook, Inc co-founder."
+			name: "Dale Durran",
+			postion: "Professor, University of Washington, Department of Atmospheric Sciences",
+			description: "Bringing Rain to the Subseasonal Forecasting Desert with Deep Learning Weather Prediction"
 		}
 	}
 }
@@ -85,8 +85,8 @@ const createSpeakersSection = () => {
        speakersSection.appendChild(more)
        return
 	}
+	
     speakersSection.appendChild(ul)
-    speakersSection.appendChild(more)
 	
 }
 

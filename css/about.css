@@ -209,25 +209,18 @@ footer {
       #previous-events p {
         width: 100%; } }
   #previous-events #event1 {
-    background: url(../images/Home-page/Mobile-version/event1.png); }
+    background: url(../images/Home-page/Mobile-version/event1.png) no-repeat center;
+    background-size: contain; }
   #previous-events #event2 {
-    background: url(../images/Home-page/Mobile-version/event2.png);
+    background: url(../images/Home-page/Mobile-version/event2.png) no-repeat center;
+    background-size: contain;
     margin-top: 1.5rem;
     margin-bottom: 3rem; }
   #previous-events #event1, #previous-events #event2 {
     height: 200px;
     width: 80vw;
-    display: flex;
     opacity: 0.5;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    #previous-events #event1 p, #previous-events #event2 p {
-      margin-block-start: 0; }
-    #previous-events #event1 p, #previous-events #event1 h4, #previous-events #event2 p, #previous-events #event2 h4 {
-      color: #fff;
-      font-size: 20px;
-      font-weight: 600; }
+    cursor: pointer; }
     @media screen and (min-width: 768px) {
       #previous-events #event1, #previous-events #event2 {
         width: 30vw;
@@ -254,6 +247,20 @@ footer {
     align-items: center; }
     #partners ul li img {
       width: 26vw; }
+  #partners a {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+    margin-block: 1.5rem;
+    color: white;
+    border: none;
+    cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      #partners a {
+        display: none; } }
 
 #copyright {
   display: flex;
@@ -264,15 +271,19 @@ footer {
     #copyright {
       background: #414246; } }
   #copyright img {
-    width: 40vw;
-    margin-left: 2.5rem; }
+    margin-left: 2.5rem;
+    width: 10vw; }
   #copyright p {
-    width: 45vw;
+    margin-left: auto;
     padding: 0 2.5rem; }
     @media screen and (min-width: 768px) {
       #copyright p {
         font-family: 'Lato', sans-serif;
         font-size: 24px;
         color: white; } }
+    #copyright p a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: green; }
 
 /*# sourceMappingURL=about.css.map */
