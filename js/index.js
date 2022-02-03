@@ -46,7 +46,7 @@ const createSpeakersSection = () => {
 		const li = document.createElement('li')
 		const speaker = document.createElement('img')
 		speaker.alt=`speaker ${i+1}`
-		speaker.src= `./images/Home-page/Mobile-version/speaker-${i+1}.png`
+		speaker.src= `./images/Home-page/speaker-${i+1}.png`
 		li.appendChild(speaker)
         const div = document.createElement('div')
         const p1 = document.createElement('p')
@@ -69,9 +69,15 @@ const createSpeakersSection = () => {
         }
         ul.appendChild(li)
 	}
-	
+
+	const a = document.createElement('a')
+	a.href= "https://www.nvidia.com/gtc/#gtcspeaker1"
+	a.target = "_blank"
+	a.innerText= "Link to all the speakers"
 	if(window.innerWidth<768){
-		const more = document.createElement('button')
+	  a.className="allow-to-hide dn"
+    }
+    const more = document.createElement('button')
 	   more.className= 'more'
 	   const span = document.createElement('span')
 	   span.innerText= 'more'
@@ -82,11 +88,8 @@ const createSpeakersSection = () => {
 	   more.appendChild(span)
 	   more.appendChild(moreIcon)
 	   speakersSection.appendChild(ul)
+	   speakersSection.appendChild(a)
        speakersSection.appendChild(more)
-       return
-	}
-	
-    speakersSection.appendChild(ul)
 	
 }
 
@@ -110,3 +113,28 @@ const showMore = () => {
 
 const moreBtn = document.querySelector('.more')
 moreBtn.addEventListener('click',showMore)
+
+const toggleMenu = (event) => {
+	if(!event.target.classList.contains('mobile-list-item')){
+        const body = document.querySelector('body')
+        body.classList.toggle('no-scroll')
+	}
+	  const nav = document.querySelector('#mobile-nav')
+	  const menu = document.querySelector('#mobile-list')
+	  const menuBtn = document.querySelector('#menu-btn')
+      nav.classList.toggle('style-popup-menu')
+	  menu.classList.toggle('dn')      
+      menuBtn.classList.toggle('fa-bars')
+      menuBtn.classList.toggle('fa-times')
+}
+
+const menuBtn = document.querySelector('#menu-btn')
+menuBtn.addEventListener('click',toggleMenu)
+
+const menuItems = document.querySelectorAll('.mobile-list-item')
+menuItems[0].addEventListener('click',toggleMenu)
+menuItems[1].addEventListener('click',toggleMenu)
+menuItems[2].addEventListener('click',toggleMenu)
+menuItems[3].addEventListener('click',toggleMenu)
+menuItems[4].addEventListener('click',toggleMenu)
+menuItems[5].addEventListener('click',toggleMenu)

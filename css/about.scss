@@ -1,3 +1,5 @@
+@import url(httpsfonts.cdnfonts.comcsscocogoose);
+@import url(httpsfonts.cdnfonts.comcssLato);
 * {
 	max-width: 100vw !important;
 }
@@ -8,24 +10,71 @@ body {
 	margin: 0;
 	padding:0;
 	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+h1,h2,h3 {
+	font-family: 'COCOGOOSE', sans-serif;
+
+}
+h1 {
+	    background-image: url("../images/general/text-bg.jpg");
+        background-size: 50%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media screen and (min-width:768px){
+        	background:none;
+        	-webkit-text-fill-color: #ec5242;
+        }
+}
+.no-scroll {
+	overflow: hidden;
 }
 ul {
 	list-style: none;
 	padding-inline-start:0;
 }
 #background {
-	background: url(../images/Home-page/Mobile-version/background.jpg) no-repeat;
+	background: url(../images/general/background.jpg) no-repeat;
 	@media screen and (min-width: 768px) {
 		background: none;
 	}
 }
+
 #mobile-nav {
 	@media screen and (min-width: 768px) {
 		display: none;
 	}
+	ul {
+		width: auto;
+    padding: 0 6rem;
+    margin-block-start: 0;
+		li {
+			width: auto;
+      padding: 0 0.5rem 0.6em 0.5rem;
+      font-size: 24px;
+      border-bottom: 1px solid white;
+      margin: 1.5rem 0;
+			a {
+				width: auto;
+        text-decoration: none;
+        color: gainsboro;
+			}
+		}
+
+	}
     i {
-	  margin: 10px;
+	     margin: 0.6rem 2.5rem;
+	     color: gray;
     }
+    .dn{
+    	display: none;
+    }
+}
+.style-popup-menu {
+	height: 100vh;
+  background: #5e565e;
+  display: flex;
+  flex-direction: column;
 }
 
 #desktop-nav {
@@ -59,7 +108,7 @@ ul {
 		color: gray;
 	}
 	img {
-		width: 8vw;
+		width: 12vw;
 	}
 	li {
 		padding: 0 2.5rem;
@@ -96,7 +145,8 @@ ul {
         @media screen and (min-width: 768px) {
 		    margin-block-start: 3rem;
 		    font-size: 2.5rem;
-		    padding: 0 24rem;
+		    width: 46vw;
+		    margin: 2.5rem auto;
 		    margin-block-end: 1.5rem;
 		    line-height: 1.2;
         }
@@ -243,11 +293,11 @@ footer {
 	}
 
 	#event1 {
-      background: url(../images/Home-page/Mobile-version/event1.png) no-repeat center;
+      background: url(../images/About-page/event1.png) no-repeat center;
       background-size:contain;
 	}
 	#event2 {
-      background: url(../images/Home-page/Mobile-version/event2.png) no-repeat center;
+      background: url(../images/About-page/event2.png) no-repeat center;
       background-size:contain;
       margin-top: 1.5rem;
       margin-bottom: 3rem;            
@@ -294,7 +344,6 @@ footer {
 	}
 	a {
     	display: block;
-    	
     	font-size: 24px;
     	text-align: center;
     	line-height: 1.2;
@@ -302,8 +351,8 @@ footer {
     	text-decoration: underline;
     	margin-block:1.5rem;
     	color: white;
-      border:none;
-      cursor: pointer;
+        border:none;
+        cursor: pointer;
       @media screen and (min-width: 768px){
       	 display: none;
       }
