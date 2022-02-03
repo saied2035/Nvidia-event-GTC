@@ -40,7 +40,7 @@ const createSpeakersSection = () => {
   const hr = document.createElement('hr');
   speakersSection.appendChild(hr);
   const ul = document.createElement('ul');
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 6; i += 1) {
     const li = document.createElement('li');
     const speaker = document.createElement('img');
     speaker.alt = `speaker ${i + 1}`;
@@ -63,7 +63,7 @@ const createSpeakersSection = () => {
     div.appendChild(p3);
     li.appendChild(div);
     if (window.innerWidth < 768 && i >= 2) {
-        	li.className = 'allow-to-hide dn';
+      li.className = 'allow-to-hide dn';
     }
     ul.appendChild(li);
   }
@@ -73,20 +73,20 @@ const createSpeakersSection = () => {
   a.target = '_blank';
   a.innerText = 'Link to all the speakers';
   if (window.innerWidth < 768) {
-	  a.className = 'allow-to-hide dn';
+    a.className = 'allow-to-hide dn';
   }
   const more = document.createElement('button');
-	   more.className = 'more';
-	   const span = document.createElement('span');
-	   span.innerText = 'more';
-	   const moreIcon = document.createElement('i');
-	   moreIcon.classList.add('fas');
-	   moreIcon.classList.add('fa-chevron-circle-down');
-	   moreIcon.classList.add('fa-1x');
-	   more.appendChild(span);
-	   more.appendChild(moreIcon);
-	   speakersSection.appendChild(ul);
-	   speakersSection.appendChild(a);
+  more.className = 'more';
+  const span = document.createElement('span');
+  span.innerText = 'more';
+  const moreIcon = document.createElement('i');
+  moreIcon.classList.add('fas');
+  moreIcon.classList.add('fa-chevron-circle-down');
+  moreIcon.classList.add('fa-1x');
+  more.appendChild(span);
+  more.appendChild(moreIcon);
+  speakersSection.appendChild(ul);
+  speakersSection.appendChild(a);
   speakersSection.appendChild(more);
 };
 
@@ -115,11 +115,11 @@ const toggleMenu = (event) => {
     const body = document.querySelector('body');
     body.classList.toggle('no-scroll');
   }
-	  const nav = document.querySelector('#mobile-nav');
-	  const menu = document.querySelector('#mobile-list');
-	  const menuBtn = document.querySelector('#menu-btn');
+  const nav = document.querySelector('#mobile-nav');
+  const menu = document.querySelector('#mobile-list');
+  const menuBtn = document.querySelector('#menu-btn');
   nav.classList.toggle('style-popup-menu');
-	  menu.classList.toggle('dn');
+  menu.classList.toggle('dn');
   menuBtn.classList.toggle('fa-bars');
   menuBtn.classList.toggle('fa-times');
 };

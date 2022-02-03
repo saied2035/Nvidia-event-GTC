@@ -3,11 +3,11 @@ const toggleMenu = (event) => {
     const body = document.querySelector('body');
     body.classList.toggle('no-scroll');
   }
-	  const nav = document.querySelector('#mobile-nav');
-	  const menu = document.querySelector('#mobile-list');
-	  const menuBtn = document.querySelector('#menu-btn');
+  const nav = document.querySelector('#mobile-nav');
+  const menu = document.querySelector('#mobile-list');
+  const menuBtn = document.querySelector('#menu-btn');
   nav.classList.toggle('style-popup-menu');
-	  menu.classList.toggle('dn');
+  menu.classList.toggle('dn');
   menuBtn.classList.toggle('fa-bars');
   menuBtn.classList.toggle('fa-times');
 };
