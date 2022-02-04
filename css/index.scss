@@ -426,12 +426,10 @@ footer {
   #copyright {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 2.5rem 0;
-
-    img {
-      margin-left: 2.5rem;
-    }
+    gap: 2rem;
 
     p {
       a {
@@ -439,11 +437,9 @@ footer {
         color: green;
       }
 
-      margin-left: auto;
-      padding: 0 2.5rem;
       color: grey;
       font-family: 'Lato', sans-serif;
-      font-size: 24px;
+      font-size: 16px;
     }
   }
 }

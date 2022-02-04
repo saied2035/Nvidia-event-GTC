@@ -170,36 +170,43 @@ ul {
 #copyright {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 2.5rem 0;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   #copyright {
     background: #414246;
+    gap: 2rem;
   }
 }
 
 #copyright img {
-  margin-left: 2.5rem;
-  width: 10vw;
+  width: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  #copyright img {
+    width: 90px;
+  }
 }
 
 #copyright p {
-  margin-left: auto;
-  padding: 0 2.5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 768px) {
   #copyright p {
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
     color: white;
+    font-size: 24px;
   }
 }
 
 #copyright p a {
-  margin-right: 10px;
+  margin-right: 5px;
   text-decoration: none;
   color: green;
 }
