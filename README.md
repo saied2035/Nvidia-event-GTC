@@ -40,7 +40,7 @@ building website that display information about Nvidia GTC March 2022
 
 ## Live Demo
 
-[view portfolio](https://saied2035.github.io/capstone-project1)
+[view Nvidia GTC 2022](https://saied2035.github.io/capstone-project1)
 
 
 ## Getting Started
